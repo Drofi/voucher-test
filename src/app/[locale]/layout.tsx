@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import { cookies } from 'next/headers';
 import { dir } from 'i18next';
 import i18nConfig from '@root/i18nConfig';
-import Navigation from '~/app/[locale]/_components/nav';
+import Navigation from '~/components/nav';
 import '~/styles/globals.css';
 import { TRPCReactProvider } from '~/trpc/react';
 

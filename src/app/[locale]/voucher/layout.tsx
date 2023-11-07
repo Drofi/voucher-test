@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import { RedirectUnAuthLayout } from '~/app/[locale]/_components/redirect-unauth-layout';
+import { RedirectUnAuthLayout } from '~/components/redirect-unauth-layout';
 
 export const metadata = {
     title: 'Voucher Example',

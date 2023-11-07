@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { LogOut } from '~/app/[locale]/_components/nav/log-out';
-import { UserInfo } from '~/app/[locale]/_components/user-info';
+import { LogOut } from '~/components/nav/log-out';
+import { UserInfo } from '~/components/user-info';
 import initTranslations from '~/i18n';
 import { getServerAuthSession } from '~/server/auth';
 

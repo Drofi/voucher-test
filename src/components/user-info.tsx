@@ -1,8 +1,9 @@
 'use client';
 
+import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
-import UserAvatar from '~/app/[locale]/_components/user-avatar';
+import UserAvatar from '~/components/user-avatar';
 import { type UserData } from '~/server/storage/user';
 import { type VoucherData } from '~/server/storage/voucher';
 
@@ -21,13 +22,16 @@ export const UserInfo = ({
 }: Props) => {
     const { t } = useTranslation(['user_info']);
 
-    const giftedPrice = !!vouchersGifted?.length
-        ? vouchersGifted.reduce((acc, v) => acc + v.price, 0)
-        : 0;
-
-    const receivedPrice = !!vouchersReceived?.length
-        ? vouchersReceived.reduce((acc, v) => acc + v.price, 0)
-        : 0;
+    const priceSum = useMemo(() => {
+        return {
+            gifted: !!vouchersGifted?.length
+                ? vouchersGifted.reduce((acc, v) => acc + v.price, 0)
+                : 0,
+            received: !!vouchersReceived?.length
+                ? vouchersReceived.reduce((acc, v) => acc + v.price, 0)
+                : 0,
+        };
+    }, [vouchersGifted, vouchersReceived]);
 
     return (
         <div className="flex items-center">
@@ -37,15 +41,15 @@ export const UserInfo = ({
                 <div className="text-xl font-bold">{user.name}</div>
                 <div className="text-gray-400">{user.email}</div>
 
-                {!!giftedPrice && (
+                {!!priceSum.gifted && (
                     <div className="text-gray-400">
-                        ${t('gifted')}: {giftedPrice}$
+                        {t('gifted')}: {priceSum.gifted}$
                     </div>
                 )}
 
-                {!!receivedPrice && (
+                {!!priceSum.received && (
                     <div className="text-gray-400">
-                        ${t('received')}: {receivedPrice}$
+                        {t('received')}: {priceSum.received}$
                     </div>
                 )}
             </div>

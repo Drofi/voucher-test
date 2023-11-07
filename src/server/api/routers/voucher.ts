@@ -1,11 +1,6 @@
 import { v4 as uuid } from 'uuid';
 import { z } from 'zod';
-import {
-    createTRPCRouter,
-    protectedProcedure,
-    publicProcedure,
-} from '~/server/api/trpc';
-import { users } from '~/server/storage/user';
+import { createTRPCRouter, protectedProcedure } from '~/server/api/trpc';
 import { type VoucherData, vouchers } from '~/server/storage/voucher';
 
 export const voucherRouter = createTRPCRouter({

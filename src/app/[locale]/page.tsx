@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import TranslationsProvider from '~/app/[locale]/_components/translations-provider';
+import TranslationsProvider from '~/components/translations-provider';
 import initTranslations from '~/i18n';
 import { getServerAuthSession } from '~/server/auth';
 
