@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import TranslationsProvider from '~/app/[locale]/_components/translations-provider';
-import initTranslations from '~/app/i18n';
+import initTranslations from '~/i18n';
 import { getServerAuthSession } from '~/server/auth';
 
 const i18nNamespaces = ['home'];

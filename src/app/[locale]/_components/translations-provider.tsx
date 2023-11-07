@@ -3,7 +3,7 @@
 import { type ReactNode, useEffect, useState } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import { type i18n as i18nInterface } from 'i18next';
-import initTranslations from '~/app/i18n';
+import initTranslations from '~/i18n';
 
 let i18n: i18nInterface;
 

@@ -1,5 +1,5 @@
 import { UserInfo } from '~/app/[locale]/_components/user-info';
-import initTranslations from '~/app/i18n';
+import initTranslations from '~/i18n';
 import { api } from '~/trpc/server';
 
 const i18nNamespaces = ['friends'];

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { LogOut } from '~/app/[locale]/_components/nav/log-out';
 import { UserInfo } from '~/app/[locale]/_components/user-info';
-import initTranslations from '~/app/i18n';
+import initTranslations from '~/i18n';
 import { getServerAuthSession } from '~/server/auth';
 
 const i18nNamespaces = ['nav'];
