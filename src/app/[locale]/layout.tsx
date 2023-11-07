@@ -2,10 +2,10 @@ import { type ReactNode } from 'react';
 import { Inter } from 'next/font/google';
 import { cookies } from 'next/headers';
 import { dir } from 'i18next';
+import i18nConfig from '@root/i18nConfig';
 import Navigation from '~/app/[locale]/_components/nav';
 import '~/styles/globals.css';
 import { TRPCReactProvider } from '~/trpc/react';
-import i18nConfig from '../../../i18nConfig';
 
 const inter = Inter({
     subsets: ['latin'],
