@@ -1,7 +1,7 @@
-import clsx from 'clsx';
 import ReactSelect from 'react-select';
 import { type GroupBase } from 'react-select/dist/declarations/src/types';
 import { type StateManagerProps } from 'react-select/dist/declarations/src/useStateManager';
+import clsx from 'clsx';
 
 const controlStyles = {
     base: 'border rounded-lg bg-white hover:cursor-pointer',

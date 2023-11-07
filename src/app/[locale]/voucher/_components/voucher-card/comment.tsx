@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-
 import { NextButton } from '~/app/[locale]/voucher/_components/voucher-card/buttons/next';
 import { useVoucherStore } from '~/app/[locale]/voucher/_components/voucher-card/voucher-store';
 

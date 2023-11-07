@@ -1,8 +1,7 @@
 'use client';
 
-import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-
+import clsx from 'clsx';
 import UserAvatar from '~/app/[locale]/_components/user-avatar';
 import { type UserData } from '~/server/storage/user';
 import { type VoucherData } from '~/server/storage/voucher';

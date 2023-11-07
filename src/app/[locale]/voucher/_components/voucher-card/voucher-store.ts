@@ -1,5 +1,4 @@
 import { create } from 'zustand';
-
 import { type UserData } from '~/server/storage/user';
 
 export const enum StepEnum {

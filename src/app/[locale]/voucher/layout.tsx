@@ -1,5 +1,4 @@
 import { type ReactNode } from 'react';
-
 import { RedirectUnAuthLayout } from '~/app/[locale]/_components/redirect-unauth-layout';
 
 export const metadata = {

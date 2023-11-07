@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-
 import { Comment } from '~/app/[locale]/voucher/_components/voucher-card/comment';
 import { DoneButton } from '~/app/[locale]/voucher/_components/voucher-card/done';
 import { Friend } from '~/app/[locale]/voucher/_components/voucher-card/friend';

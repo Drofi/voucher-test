@@ -1,12 +1,10 @@
+import { cookies } from 'next/headers';
 import {
     createTRPCProxyClient,
     loggerLink,
     unstable_httpBatchStreamLink,
 } from '@trpc/client';
-import { cookies } from 'next/headers';
-
 import { type AppRouter } from '~/server/api/root';
-
 import { getUrl, transformer } from './shared';
 
 export const api = createTRPCProxyClient<AppRouter>({

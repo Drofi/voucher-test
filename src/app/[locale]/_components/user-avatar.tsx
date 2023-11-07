@@ -1,5 +1,4 @@
 import { minidenticon } from 'minidenticons';
-
 import { type UserData } from '~/server/storage/user';
 
 type Props = { className?: string; user: UserData };

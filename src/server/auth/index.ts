@@ -3,7 +3,6 @@ import {
     type NextAuthOptions,
     getServerSession,
 } from 'next-auth';
-
 import { env } from '~/env.mjs';
 import { MyProvider } from '~/server/auth/provider';
 import { type UserData } from '~/server/storage/user';

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-
 import { LogOut } from '~/app/[locale]/_components/nav/log-out';
 import { UserInfo } from '~/app/[locale]/_components/user-info';
 import initTranslations from '~/app/i18n';

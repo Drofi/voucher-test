@@ -1,5 +1,4 @@
 import Credentials from 'next-auth/providers/credentials';
-
 import { api } from '~/trpc/server';
 
 export const MyProvider = Credentials({
